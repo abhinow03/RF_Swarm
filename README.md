@@ -253,6 +253,24 @@ and settled:
 python3 demo2/scripts/capture_run.py --scenario gate_k6_diamond --run-id my_run --duration 60
 ```
 
+`demo2/figures/` has three review PNGs generated straight from real captured
+RF data (`demo2/scripts/make_review_figures.py`, offline, no live pipeline
+needed — it re-runs the real router+encoder on real IQ and reuses the JSON
+above):
+
+| Figure | Shows |
+|---|---|
+| `01_clustering.png` | Real-device embeddings (t-SNE), colored by true device, one panel per run |
+| `02_iq_waveform.png` | One real captured I/Q burst per protocol |
+| `03_formation_snapshot.png` | Final swarm positions vs. the fixed receiver array, one panel per run |
+
+Each has an honest-caveat caption baked in — BLE's clustering looks messier
+than WiFi/drone in 2D purely because its real separation margin is the
+tightest of the three (the live 128-D clustering still resolves it correctly),
+and the diamond/v_shape formation snapshots don't read as cleanly by eye as
+column does, because both are close in scale to real EKF position noise. Real
+data, real limitations — not bugs.
+
 ## The AR headset client (separate repo)
 
 The Meta Quest AR visualization is a **separate repository**, not part of
