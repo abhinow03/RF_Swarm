@@ -1,0 +1,8 @@
+{
+  "granularity": "per-unit, at rff_node startup (pre-encode) \u2014 NOT per-burst; the router does not re-classify at runtime, matching the current node design",
+  "source": "parsed from /rosout (capstone_rff's own startup log line) \u2014 zero new pipeline behavior",
+  "raw_line": "rff: pre-encoded real IQ -> embedding banks in 2.3s | router routes={'ble': 6} | u4:800emb, u7:800emb, u28:800emb, u30:800emb, u18:800emb, u11:800emb",
+  "route_counts": {
+    "ble": 6
+  }
+}

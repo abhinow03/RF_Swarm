@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>RF_Swarm client bridge test</title>
+  <script src="https://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+  <script src="rf_bridge.js"></script>
+  <style>
+    body { font: 13px/1.4 monospace; background:#0b0f0e; color:#cfe; margin:0; padding:14px; }
+    h2 { color:#2dffa0; margin:14px 0 4px; font-size:14px; }
+    .row { display:flex; gap:16px; flex-wrap:wrap; }
+    .panel { background:#111a18; border:1px solid #1d302c; border-radius:6px; padding:10px; min-width:320px; flex:1; }
+    .age { color:#ffb454; }
+    table { border-collapse:collapse; width:100%; } td,th { text-align:left; padding:2px 8px; border-bottom:1px solid #16231f; }
+    #status { padding:4px 8px; border-radius:4px; display:inline-block; }
+    .ok{background:#0a3;} .bad{background:#a30;} .wait{background:#a80;}
+    input{ background:#0b0f0e; color:#cfe; border:1px solid #2a3; padding:4px; width:280px; }
+    button{ background:#2dffa0; border:0; padding:5px 12px; border-radius:4px; cursor:pointer; font-weight:bold; }
+  </style>
+</head>
+<body>
+  <h2>RF_Swarm live client (Option-C: /scene_update tracks + independent /formation /narration)</h2>
+  <div>
+    <input id="url" value="ws://localhost:9090">
+    <button onclick="go()">connect</button>
+    <span id="status" class="wait">idle</span>
+    <span id="counts"></span>
+  </div>
+  <div class="row">
+    <div class="panel"><h2>/scene_update — tracks (Y-up) <span class="age" id="scene_age"></span></h2>
+      <div id="scene_meta"></div><table id="tracks"></table></div>
+    <div class="panel"><h2>/formation <span class="age" id="form_age"></span></h2><div id="form"></div></div>
+    <div class="panel"><h2>/narration <span class="age" id="narr_age"></span></h2><div id="narr"></div></div>
+  </div>
+  <script>
+    var last = { scene:0, form:0, narr:0 };
+    var n = { scene:0, form:0, narr:0 };
+    function ago(t){ return t ? ((performance.now()-t)/1000).toFixed(1)+'s ago' : '—'; }
+    setInterval(function(){
+      document.getElementById('scene_age').textContent = ago(last.scene);
+      document.getElementById('form_age').textContent  = ago(last.form);
+      document.getElementById('narr_age').textContent  = ago(last.narr);
+      document.getElementById('counts').textContent =
+        `  scene:${n.scene}  formation:${n.form}  narration:${n.narr}`;
+    }, 200);
+    function setStatus(s){ var el=document.getElementById('status');
+      el.textContent=s; el.className = s==='connected'?'ok':(s==='connecting'?'wait':'bad'); }
+    function go(){
+      window.__b && window.__b.close();
+      window.__b = RFBridge.connect({
+        url: document.getElementById('url').value,
+        onStatus: function(s){ setStatus(s); },
+        onScene: function(env, emitters){
+          last.scene=performance.now(); n.scene++;
+          document.getElementById('scene_meta').textContent =
+            `scenario=${env.scenario_id} k=${env.k_estimated} latency=${(env.pipeline_latency_ms||0).toFixed(0)}ms`;
+          var rows = '<tr><th>id</th><th>cls</th><th>conf</th><th>pos [E,U,-N]</th><th>status</th><th>gdop</th></tr>';
+          emitters.forEach(function(e){ rows +=
+            `<tr><td>${e.id}</td><td>${e.cls}</td><td>${e.confidence.toFixed(2)}</td>`+
+            `<td>[${e.pos.map(function(v){return v.toFixed(1);}).join(', ')}]</td>`+
+            `<td>${e.status}</td><td>${e.gdop.toFixed(2)}</td></tr>`; });
+          document.getElementById('tracks').innerHTML = rows;
+        },
+        onFormation: function(f){ last.form=performance.now(); n.form++;
+          document.getElementById('form').innerHTML =
+            `<b>${f.formation_class}</b> conf=${(f.confidence||0).toFixed(3)} `+
+            `from_truth=${f.from_truth}<br>members=${(f.member_ids||[]).join(',')}`; },
+        onNarration: function(nr){ last.narr=performance.now(); n.narr++;
+          document.getElementById('narr').innerHTML =
+            `<b>[${nr.template_id}]</b> (${nr.source}, sev ${nr.severity})<br>${nr.text||''}`; },
+      });
+    }
+  </script>
+</body>
+</html>

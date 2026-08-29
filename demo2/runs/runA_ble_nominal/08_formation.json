@@ -1,0 +1,35 @@
+{
+  "latest": {
+    "formation_class": "diamond",
+    "confidence": 0.991,
+    "class_probabilities": [
+      0.0005,
+      0.0012,
+      0.0003,
+      0.991,
+      0.0023,
+      0.0006,
+      0.0004,
+      0.0038
+    ],
+    "member_ids": [
+      "d1",
+      "d2",
+      "d3",
+      "d4",
+      "d5",
+      "d6"
+    ],
+    "from_truth": false
+  },
+  "stability": {
+    "n_messages": 344,
+    "label_counts": {
+      "diamond": 344
+    },
+    "majority_label": "diamond",
+    "majority_fraction": 1.0,
+    "is_stable": true
+  },
+  "warning": null
+}

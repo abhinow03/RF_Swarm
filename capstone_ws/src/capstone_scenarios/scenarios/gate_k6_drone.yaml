@@ -1,0 +1,65 @@
+# RF_Swarm demo2 Run C — multi-protocol variant (drone_ocusync tier, v_shape formation).
+# Same geometry/clock as gate_k6* — only rf: (protocol physics, NOISE_MODEL.md §8) and
+# rff: (real DRFF unit_ids) differ. Story: HONEST DEGRADATION. v_shape is the known-hard
+# formation (Phase 5: 18% v_shape->shield confusion, EKF position RMSE blurring subtle
+# shapes) — this run should show confidence dropping / narration escalating, not a
+# confidently-wrong answer. That is the intended, pre-registered behavior, not a bug.
+scenario_id: gate_k6_drone
+
+k: 6                        # gate at K=6 (full STGT template; no subsetting)
+formation_label: v_shape    # known-hard formation (Phase 5 finding) — deliberate for the honest-degradation story
+spread: 1.0                 # scales get_formation_offsets
+seed: 7                     # reproducibility for dispersed/converging RNG
+duration_s: 60.0            # trajectory clamps (holds) after this; sim keeps running
+
+# Fixed base-station TDoA array (ENU metres). Z-diverse on purpose: 4 corners at
+# a 90 m footprint (two raised to 35 m) + one elevated centre at 70 m, so the
+# vertical axis is observable and GDOP stays ~1.2–1.8 across the whole traversal.
+receivers:
+  - [ 90.0,  90.0,  0.0]
+  - [-90.0,  90.0, 35.0]
+  - [-90.0, -90.0,  0.0]
+  - [ 90.0, -90.0, 35.0]
+  - [  0.0,   0.0, 70.0]
+
+# Swarm centroid path. Rigid formation: every emitter = centroid + its offset,
+# all sharing the centroid velocity. Stays inside the array footprint.
+trajectory:
+  type: constant_velocity
+  start:    [-30.0, 0.0, 50.0]
+  velocity: [  1.0, 0.0,  0.0]
+
+# --- RF observable + receiver-noise model (pre-registered; see NOISE_MODEL.md §8) ---
+rf:
+  protocol: drone_ocusync    # OcuSync tier: ~7-10 MHz frequency-hopping ch @ 5.8 GHz
+  carrier_hz: 5.8e+9
+  bandwidth_hz: 8.5e+6        # midpoint of 7-10 MHz hop BW; CRLB uses B_rms = bandwidth/sqrt(12)
+  sample_rate_hz: 50.0e+6     # DRFF native capture rate (RFF PROTO_NATIVE drone_ocusync tier)
+  window_samples: 4096        # DRFF native window; T = 4096/50e6 = 81.92 us -> sigma_fdoa
+  path_loss_exponent: 2.2     # outdoor near-LOS (matches RFF demo_router/geometry.py; protocol-agnostic)
+  rssi_ref_dbm_at_1m: -30.0   # reused adopted scale (§2/§8) — no more-traceable per-protocol TX power exists
+  noise_figure_db: 6.0
+  rssi_shadow_sigma_db: 3.5
+  cfo_ppm: 20.0                # NOT RFF-traceable (DRFF disables CFO aug — "CFO is fingerprint") —
+                                # illustrative consumer-oscillator assumption, confirmed 2026-08-28 (§8)
+  burst_rate_hz: 2.0           # per emitter
+clock:                         # per-receiver nuisance state (DISCIPLINED-array residual) — unchanged from gate_k6
+  bias_max_ns: 30.0
+  drift_max_ns_per_s: 0.3
+  bias_sigma_ns: 30.0
+
+# --- fingerprint binding (capstone_rff) — real DRFF airframe IQ, ~/CAPSTONE/DL_model ---
+# unit_ids re-screened (2026-08-28, 2nd pass): the first pick (mavicAir2s_4/_5, 129/70 real
+# windows) reached whole-centroid worst-pair 0.643, but live K-estimation over-split anyway
+# (K_hat=7) — those small-N centroids were spuriously separable and didn't reflect the noisier
+# per-burst (8-window) statistic K-estimation actually uses. Well-provisioned-only screen
+# (>=1000 real windows, 11-13 candidates) can't beat worst-pair 0.879 (> MERGE_TAU 0.85) at
+# K=6 — get_formation_offsets() is a hardcoded (6,3) template, so K can't be reduced without
+# breaking the "real STGT formation" premise (same issue dev_k2.yaml documents for K=2).
+# windows_per_obs raised 8->40 to shrink per-burst pooling noise (std error ~1/sqrt(N), a
+# ~2.2x reduction) as a targeted mitigation for the 0.879-vs-0.85 gap before touching
+# MERGE_TAU itself (a shared, gated K-estimation constant — out of scope for this run).
+rff:
+  embedding_pool: n/a                                                        # unused field
+  unit_ids: ['mavic3_1', 'mavic3S_1', 'mavicAir2s_2', 'mavicAir2s_6', 'mini3pro_1', 'mavicAir2s_3']
+  windows_per_obs: 40                                                        # raised from 8, see note above

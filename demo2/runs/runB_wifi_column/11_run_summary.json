@@ -1,0 +1,27 @@
+{
+  "run_id": "runB_wifi_column",
+  "scenario_id": "gate_k6_wifi",
+  "protocol": "wifi",
+  "formation_label_truth": "column",
+  "k_true": 6,
+  "k_estimated": 6,
+  "k_estimate_correct": true,
+  "formation_class_latest": "column",
+  "formation_class_majority": "column",
+  "formation_majority_fraction": 1.0,
+  "formation_confidence": 0.9879,
+  "formation_correct": true,
+  "n_tracks": 6,
+  "position_rmse": null,
+  "n_narration_events": 2,
+  "node_health_status": {
+    "capstone_sim": "ok",
+    "capstone_base": "K_hat=6 tracks=353 withheld(<15)=0",
+    "capstone_track": "tracks=6 assoc_map=353 pending=361",
+    "capstone_formation": "EKF formation=column conf=0.988",
+    "capstone_predict": "cv_baseline predictions for 6 tracks, horizon=5.0s",
+    "capstone_bridge": "ok",
+    "capstone_narrate": "ok",
+    "capstone_rff": "ok"
+  }
+}

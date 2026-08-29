@@ -1,0 +1,27 @@
+{
+  "model": "STGT graph-transformer formation classifier (best_model.pt)",
+  "INPUT": "pose sequence (50 timesteps x 6 drones x 3 ENU) from EKF /tracks, normalized (x-32.408)/68.177",
+  "from_truth": false,
+  "OUTPUT": {
+    "formation_class": "encirclement",
+    "confidence": 0.9683,
+    "class_probabilities": {
+      "v_shape": 0.0068,
+      "encirclement": 0.9683,
+      "column": 0.0012,
+      "diamond": 0.003,
+      "dispersed": 0.0087,
+      "converging": 0.0028,
+      "shield": 0.0013,
+      "transitioning": 0.008
+    },
+    "member_ids": [
+      "d1",
+      "d2",
+      "d3",
+      "d4",
+      "d5",
+      "d6"
+    ]
+  }
+}

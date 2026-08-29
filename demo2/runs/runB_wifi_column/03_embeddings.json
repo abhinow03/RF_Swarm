@@ -1,0 +1,23 @@
+{
+  "n_messages": 9555,
+  "dims": [
+    512
+  ],
+  "encoder_sha256": [
+    "03898f49061916c7ffbb0c112575f949ff3ce700042e4e3e98d43ca1ecc19bd5"
+  ],
+  "sources": [
+    "rffp:router+wifi_encoder"
+  ],
+  "rx_ids_seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "burst_seq_range": [
+    1039,
+    2949
+  ]
+}

@@ -1,0 +1,30 @@
+# --- Python environments (recreate from requirements.txt) ---
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# --- ROS 2 colcon build artifacts (regenerate with `colcon build`) ---
+capstone_ws/build/
+capstone_ws/install/
+capstone_ws/log/
+
+# --- Node (recreate with `npm install`) ---
+node_modules/
+
+# --- Downloaded third-party tool binaries (not source; see README for versions/links) ---
+capstone_ws/tools/cloudflared
+capstone_ws/tools/mkcert
+
+# --- Generated TLS certs/keys (machine-specific, regenerate via mkcert; never commit private keys) ---
+capstone_ws/certs/*.pem
+capstone_ws/certs/mkcert-ca/
+
+# --- Claude Code project-local config (not part of the project) ---
+.claude/
+
+# --- Editor / OS cruft ---
+.DS_Store
+
+# --- Unreferenced/unclear-provenance asset, not linked from any doc (flagged for review) ---
+/ChatGPT Image *.png

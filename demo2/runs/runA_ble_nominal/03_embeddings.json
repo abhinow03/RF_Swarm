@@ -1,0 +1,23 @@
+{
+  "n_messages": 9810,
+  "dims": [
+    128
+  ],
+  "encoder_sha256": [
+    "f1d7745eaa726e6a252961015a1647bf407f4e7815c022f128a12d9f752a2ebb"
+  ],
+  "sources": [
+    "rffp:router+ble_encoder"
+  ],
+  "rx_ids_seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "burst_seq_range": [
+    594,
+    2555
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "note": "position error = EKF track vs ground-truth emitter (matched via blind fingerprint association). Frame: ENU metres (E,N,U); the client-facing /scene_update separately converts to Three.js Y-up.",
+  "position_RMSE_m": 15.26,
+  "position_mean_m": 13.75,
+  "position_p90_m": 22.01,
+  "per_track_mean_error_m": {
+    "d1": 13.56,
+    "d2": 11.77,
+    "d3": 11.69,
+    "d4": 13.56,
+    "d5": 15.76,
+    "d6": 16.14
+  },
+  "gid_to_true_emitter": {
+    "d3": 3,
+    "d4": 2,
+    "d5": 1,
+    "d6": 0,
+    "d1": 5,
+    "d2": 4
+  },
+  "association_bijective": true
+}

@@ -1,0 +1,25 @@
+{
+  "protocol": "drone_ocusync",
+  "unit_ids": [
+    "mavic3_1",
+    "mavic3S_1",
+    "mavicAir2s_2",
+    "mavicAir2s_6",
+    "mini3pro_1",
+    "mavicAir2s_3"
+  ],
+  "rf_physics": {
+    "protocol": "drone_ocusync",
+    "carrier_hz": 5800000000.0,
+    "bandwidth_hz": 8500000.0,
+    "sample_rate_hz": 50000000.0,
+    "window_samples": 4096,
+    "path_loss_exponent": 2.2,
+    "rssi_ref_dbm_at_1m": -30.0,
+    "noise_figure_db": 6.0,
+    "rssi_shadow_sigma_db": 3.5,
+    "cfo_ppm": 20.0,
+    "burst_rate_hz": 2.0
+  },
+  "n_observations_captured": 18000
+}

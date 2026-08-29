@@ -1,0 +1,65 @@
+{
+  "n_events": 4,
+  "events": [
+    {
+      "text": "A small group of UAVs is maintaining a steady velocity and formation, showing no signs of approaching or engaging with any targets.",
+      "template_id": "ctx_formation_stgt",
+      "source": "llm",
+      "severity": 0,
+      "referenced_ids": [
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "d5",
+        "d6"
+      ],
+      "trigger_time": 46.0
+    },
+    {
+      "text": "A small group of UAVs is maintaining a steady velocity and formation, showing no signs of approaching or engaging with any targets.",
+      "template_id": "ctx_formation_stgt",
+      "source": "llm",
+      "severity": 0,
+      "referenced_ids": [
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "d5",
+        "d6"
+      ],
+      "trigger_time": 46.4
+    },
+    {
+      "text": "A small group of UAVs is maintaining a steady velocity and formation, showing no signs of approaching or engaging with any targets.",
+      "template_id": "ctx_formation_stgt",
+      "source": "llm",
+      "severity": 0,
+      "referenced_ids": [
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "d5",
+        "d6"
+      ],
+      "trigger_time": 55.4
+    },
+    {
+      "text": "A small group of UAVs is maintaining a steady velocity and formation, showing no signs of approaching or engaging with any targets.",
+      "template_id": "ctx_formation_stgt",
+      "source": "llm",
+      "severity": 0,
+      "referenced_ids": [
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "d5",
+        "d6"
+      ],
+      "trigger_time": 57.4
+    }
+  ]
+}

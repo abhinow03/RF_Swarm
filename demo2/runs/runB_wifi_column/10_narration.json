@@ -1,0 +1,35 @@
+{
+  "n_events": 2,
+  "events": [
+    {
+      "text": "A column of UAVs is maintaining a steady velocity and formation without any significant changes in their approach rate or stability.",
+      "template_id": "ctx_formation_stgt",
+      "source": "llm",
+      "severity": 0,
+      "referenced_ids": [
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "d5",
+        "d6"
+      ],
+      "trigger_time": 84.6
+    },
+    {
+      "text": "A column of UAVs is maintaining a steady velocity and formation without any significant changes in approach rate or stability.",
+      "template_id": "ctx_formation_stgt",
+      "source": "llm",
+      "severity": 0,
+      "referenced_ids": [
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "d5",
+        "d6"
+      ],
+      "trigger_time": 84.9
+    }
+  ]
+}

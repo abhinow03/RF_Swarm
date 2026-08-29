@@ -1,0 +1,19 @@
+{
+  "model": "Qwen2.5-7B-Instruct (4-bit) + LoRA adapter v5_sft_v5a2, bucket-A path",
+  "examples": [
+    {
+      "time_s": 34.4,
+      "INPUT_ctx (tactical context string fed to Qwen2.5-7B + adapter)": "Observation window: 34.4s - 34.4s (1 overlapping 50-step windows)\nDominant formation: encirclement\nFormation history: encirclement\nNo formation transitions detected.\nVelocity trend: steady (delta_v=+0.00)\nFormation stability: holding (mean=0.00)\nSpread dynamics: stable spread (mean approach_rate=0.000)\nRole differentiation: not prominent\nClassifier confidence: mean=0.97 (0 low-confidence windows)",
+      "OUTPUT_narration (LLM-generated)": "Multiple UAVs are forming an encircling pattern around a target, indicating a high-level threat.",
+      "template_id": "ctx_formation_stgt",
+      "source": "llm"
+    },
+    {
+      "time_s": 105.5,
+      "INPUT_ctx (tactical context string fed to Qwen2.5-7B + adapter)": "Observation window: 105.5s - 105.5s (1 overlapping 50-step windows)\nDominant formation: v_shape\nFormation history: v_shape\nTransition detected at t=105.5s: encirclement -> v_shape\nVelocity trend: steady (delta_v=+0.00)\nFormation stability: holding (mean=0.00)\nSpread dynamics: stable spread (mean approach_rate=0.000)\nRole differentiation: not prominent\nClassifier confidence: mean=0.71 (0 low-confidence windows)",
+      "OUTPUT_narration (LLM-generated)": "The UAVs have transitioned from an encirclement formation to a V-shape, indicating a potential regrouping activity.",
+      "template_id": "ctx_formation_stgt",
+      "source": "llm"
+    }
+  ]
+}

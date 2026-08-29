@@ -1,0 +1,56 @@
+# RF_Swarm Phase 5 — K=6 formation-classifier variant (v_shape). Full 6-drone formation template,
+# byte-identical to the STGT-side get_formation_offsets geometry.
+scenario_id: gate_k6_vshape
+
+k: 6                        # gate at K=6 (full STGT template; no subsetting)
+formation_label: v_shape   # confusion-matrix variant of gate_k6 (same geometry/RF/clock)
+spread: 1.0                # scales get_formation_offsets
+seed: 7                    # reproducibility for dispersed/converging RNG
+duration_s: 60.0           # trajectory clamps (holds) after this; sim keeps running
+
+# Fixed base-station TDoA array (ENU metres). Z-diverse on purpose: 4 corners at
+# a 90 m footprint (two raised to 35 m) + one elevated centre at 70 m, so the
+# vertical axis is observable and GDOP stays ~1.2–1.8 across the whole traversal.
+receivers:
+  - [ 90.0,  90.0,  0.0]
+  - [-90.0,  90.0, 35.0]
+  - [-90.0, -90.0,  0.0]
+  - [ 90.0, -90.0, 35.0]
+  - [  0.0,   0.0, 70.0]
+
+# Swarm centroid path. Rigid formation: every emitter = centroid + its offset,
+# all sharing the centroid velocity. Stays inside the array footprint.
+trajectory:
+  type: constant_velocity
+  start:    [-30.0, 0.0, 50.0]
+  velocity: [  1.0, 0.0,  0.0]
+
+# --- Phase 2 RF observable + receiver-noise model (pre-registered; see NOISE_MODEL.md) ---
+rf:
+  protocol: ble             # BLE tier: GFSK ~1 MHz ch @ 2.4 GHz (matches ESP32-C3 RFF hardware)
+  carrier_hz: 2.4e+9        # explicit +exponent so PyYAML parses as float, not str
+  bandwidth_hz: 1.0e+6      # occupied GFSK channel; CRLB uses B_rms = bandwidth/sqrt(12)
+  sample_rate_hz: 6.0e+6    # BLE capture rate (RFF PROTO_NATIVE ble tier)
+  window_samples: 1850      # BLE window (RFF PROTO_NATIVE); T = window/sample_rate = 308 us -> sigma_fdoa
+  path_loss_exponent: 2.2   # outdoor near-LOS (matches RFF demo_router/geometry.py)
+  rssi_ref_dbm_at_1m: -30.0 # decision-2 convention A: RSSI(d) = P0 - 10*n*log10(d)
+  noise_figure_db: 6.0
+  rssi_shadow_sigma_db: 3.5
+  cfo_ppm: 12.5             # per-emitter, drawn once (= ±0.005 cyc/sample @6MS/s = ±30 kHz @2.4GHz)
+  burst_rate_hz: 2.0        # per emitter
+clock:                      # per-receiver nuisance state (DISCIPLINED-array residual, GPS/PTP-synced)
+  # RECONCILED 2026-08-26 (Phase-4 observability finding, NOISE_MODEL §4): the
+  # per-receiver clock is UNOBSERVABLE from TDoA of a compact swarm (a common
+  # formation translation is degenerate with a clock-bias shift). Resolved by
+  # modelling the array as time-disciplined: the injected spread now MATCHES the
+  # published residual (was bias_max 100 / sigma 30 — an overconfident, inconsistent
+  # pair), so the estimator can use clock_bias_sigma as an honest informative prior.
+  bias_max_ns: 30.0         # bias0 ~ U(±bias_max); == sigma below (conservative half-width)
+  drift_max_ns_per_s: 0.3   # drift ~ U(±drift_max); bias(t) = bias0 + drift*t (stable oscillator)
+  bias_sigma_ns: 30.0       # published residual (ReceiverState.clock_bias_sigma) = EKF prior
+
+# --- Phase 3 fingerprint binding (capstone_rff) ---
+rff:
+  embedding_pool: ble_xiao_outdoor_pool.npz    # RF_Swarm/data/ble_embeddings/
+  unit_ids: [4, 7, 28, 30, 18, 11]             # provisioned separable units (gate set, worst cos 0.761)
+  windows_per_obs: 8                           # real BLE windows pooled per (burst, rx)

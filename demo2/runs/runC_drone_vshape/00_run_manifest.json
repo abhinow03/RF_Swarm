@@ -1,0 +1,65 @@
+{
+  "run_id": "runC_drone_vshape",
+  "scenario_id": "gate_k6_drone",
+  "protocol": "drone_ocusync",
+  "formation_label": "v_shape",
+  "k": 6,
+  "seed": 7,
+  "capture_start_unix": 1787910832.6712918,
+  "capture_end_unix": 1787911132.6718426,
+  "duration_s": 300.0005507469177,
+  "scenario_yaml_path": "/home/pw26_akp_01/RF_Swarm/capstone_ws/src/capstone_scenarios/scenarios/gate_k6_drone.yaml",
+  "scenario_yaml_sha256": "0357d7606e9efc8f7f96da5978388de5280eef84b4e910fff08939ddf2f20206",
+  "dependency_manifest_sha256": "75f09f9c9fd979d9f9437397f9adab86d08948fee22086c8fe96dc9f005be745",
+  "node_health": {
+    "capstone_base": {
+      "passthrough_truth": false,
+      "publish_rate_hz": 0.0,
+      "messages_dropped": 0,
+      "status_text": "K_hat=6 tracks=2594 withheld(<15)=0"
+    },
+    "capstone_track": {
+      "passthrough_truth": false,
+      "publish_rate_hz": 10.0,
+      "messages_dropped": 0,
+      "status_text": "tracks=6 assoc_map=2594 pending=158"
+    },
+    "capstone_formation": {
+      "passthrough_truth": false,
+      "publish_rate_hz": 2.0,
+      "messages_dropped": 0,
+      "status_text": "EKF formation=shield conf=0.863"
+    },
+    "capstone_predict": {
+      "passthrough_truth": false,
+      "publish_rate_hz": 10.0,
+      "messages_dropped": 0,
+      "status_text": "cv_baseline predictions for 6 tracks, horizon=5.0s"
+    },
+    "capstone_bridge": {
+      "passthrough_truth": false,
+      "publish_rate_hz": 10.0,
+      "messages_dropped": 0,
+      "status_text": "ok"
+    },
+    "capstone_sim": {
+      "passthrough_truth": false,
+      "publish_rate_hz": 50.0,
+      "messages_dropped": 0,
+      "status_text": "ok"
+    },
+    "capstone_narrate": {
+      "passthrough_truth": false,
+      "publish_rate_hz": 0.0,
+      "messages_dropped": 0,
+      "status_text": "model load failed: only 13.6 GiB free GPU memory, need >= 15.0 GiB -- halting before loading anything (see V5A2 training session's OOM crash for why this project checks first rather than attempting and crashing)"
+    },
+    "capstone_rff": {
+      "passthrough_truth": false,
+      "publish_rate_hz": 12.0,
+      "messages_dropped": 0,
+      "status_text": "ok"
+    }
+  },
+  "note": "No git repo exists anywhere under RF_Swarm (verified 2026-08-28) \u2014 code provenance is the scenario YAML sha256 above + DEPENDENCY_MANIFEST.md (vendor commit, model checksums), not a git commit hash."
+}

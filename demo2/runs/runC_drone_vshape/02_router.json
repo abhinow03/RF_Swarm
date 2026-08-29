@@ -1,0 +1,8 @@
+{
+  "granularity": "per-unit, at rff_node startup (pre-encode) \u2014 NOT per-burst; the router does not re-classify at runtime, matching the current node design",
+  "source": "parsed from /rosout (capstone_rff's own startup log line) \u2014 zero new pipeline behavior",
+  "raw_line": "rff: pre-encoded real IQ -> embedding banks in 4.7s | router routes={'drone_ocusync': 6} | umavic3_1:800emb, umavic3S_1:800emb, umavicAir2s_2:800emb, umavicAir2s_6:311emb, umini3pro_1:800emb, umavicAir2s_3:800emb",
+  "route_counts": {
+    "drone_ocusync": 6
+  }
+}

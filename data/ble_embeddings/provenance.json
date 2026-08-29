@@ -1,0 +1,15 @@
+{
+  "encoder_sha256": "f1d7745eaa726e6a252961015a1647bf407f4e7815c022f128a12d9f752a2ebb",
+  "ckpt": "/home/pw26_akp_01/CAPSTONE/DL_model/summer_work/runs/ble_native_s2024/best.pt",
+  "collections": [
+    "Wireless (outdoors)/Loc1",
+    "Wireless (outdoors)/Loc2",
+    "Wireless (outdoors)/Loc3",
+    "Wireless (outdoors)/Loc4"
+  ],
+  "n_units": 31,
+  "dim": 128,
+  "n_per": 150,
+  "source": "replay:esp32_lab",
+  "total_windows": 18600
+}

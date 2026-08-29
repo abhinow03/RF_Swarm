@@ -1,0 +1,50 @@
+{
+  "model": "joint iterated EKF (per-track [x y z vx vy vz] + shared per-receiver clock [bias,drift])",
+  "INPUT": {
+    "measurement": "z_j = c*(toa_j - toa_0) [range differences, metres]",
+    "range_differences_m": [
+      0.0,
+      2.1,
+      2.1,
+      -29.38,
+      -115.72
+    ],
+    "receiver_positions_ENU": [
+      [
+        90.0,
+        90.0,
+        0.0
+      ],
+      [
+        -90.0,
+        90.0,
+        35.0
+      ],
+      [
+        -90.0,
+        -90.0,
+        0.0
+      ],
+      [
+        90.0,
+        -90.0,
+        35.0
+      ],
+      [
+        0.0,
+        0.0,
+        70.0
+      ]
+    ],
+    "clock_prior": "disciplined-array clock_bias_sigma = 30 ns (ESTIMATED as a state, never read from /truth)"
+  },
+  "OUTPUT": {
+    "track_position_ENU": [
+      20.95,
+      -9.31,
+      47.64
+    ],
+    "gdop": 1.478,
+    "note": "clock bias is a jointly-estimated state; velocity from the constant-velocity model (TDoA-only)"
+  }
+}

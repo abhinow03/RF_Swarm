@@ -1,0 +1,44 @@
+# RF_Swarm Phase 3 — K-sweep point K=4 (STGT encirclement, leading-4 subset).
+scenario_id: sweep_k4
+
+k: 4
+formation_label: encirclement   # leading-4 of the 6-drone template (k<=6, valid STGT subset)
+spread: 1.0
+seed: 4
+duration_s: 60.0
+
+receivers:
+  - [ 90.0,  90.0,  0.0]
+  - [-90.0,  90.0, 35.0]
+  - [-90.0, -90.0,  0.0]
+  - [ 90.0, -90.0, 35.0]
+  - [  0.0,   0.0, 70.0]
+
+trajectory:
+  type: constant_velocity
+  start:    [-30.0, 0.0, 50.0]
+  velocity: [  1.0, 0.0,  0.0]
+
+# --- Phase 2 RF observable + receiver-noise model (see NOISE_MODEL.md) ---
+rf:
+  protocol: ble
+  carrier_hz: 2.4e+9
+  bandwidth_hz: 1.0e+6
+  sample_rate_hz: 6.0e+6
+  window_samples: 1850
+  path_loss_exponent: 2.2
+  rssi_ref_dbm_at_1m: -30.0
+  noise_figure_db: 6.0
+  rssi_shadow_sigma_db: 3.5
+  cfo_ppm: 12.5
+  burst_rate_hz: 2.0
+clock:                      # DISCIPLINED-array residual; reconciled 2026-08-26 (see gate_k6 / NOISE_MODEL §4)
+  bias_max_ns: 30.0         # == sigma (was 100): injected spread matches published residual
+  drift_max_ns_per_s: 0.3   # was 1.0: stable disciplined oscillator
+  bias_sigma_ns: 30.0       # published residual = EKF informative prior
+
+# --- Phase 3 fingerprint binding (capstone_rff) ---
+rff:
+  embedding_pool: ble_xiao_outdoor_pool.npz    # RF_Swarm/data/ble_embeddings/
+  unit_ids: [4, 7, 28, 30]                     # provisioned separable units -> emitter_id 0..3
+  windows_per_obs: 8                           # real BLE windows pooled per (burst, rx)

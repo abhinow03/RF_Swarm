@@ -1,0 +1,14 @@
+RF_Swarm narration log (real run)
+==================================================
+[t=9.4s] source=template template=ctx_degenerate_no_formation
+    No formation signal yet: 6 emitter(s) tracked, formation classifier offline. Holding — no in-vocabulary formation is present (STGT classifier offline); every observation window is below the confidence threshold.
+
+[t=54.9s] source=template template=ctx_formation_stgt
+    Formation classifier reports "dispersed" (confidence 0.50) across 6 tracked emitter(s), below the narration threshold. Holding — every observation window is below the confidence threshold.
+
+[t=34.4s] source=llm      template=ctx_formation_stgt
+    Multiple UAVs are forming an encircling pattern around a target, indicating a high-level threat.
+
+[t=105.5s] source=llm      template=ctx_formation_stgt
+    The UAVs have transitioned from an encirclement formation to a V-shape, indicating a potential regrouping activity.
+

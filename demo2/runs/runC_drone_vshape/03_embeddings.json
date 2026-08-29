@@ -1,0 +1,23 @@
+{
+  "n_messages": 15915,
+  "dims": [
+    512
+  ],
+  "encoder_sha256": [
+    "2ef7fc2531f61b743939bf426b831d21915eb8f6b365ba0a482589a95ef4d5a5"
+  ],
+  "sources": [
+    "rffp:router+drone_ocusync_encoder"
+  ],
+  "rx_ids_seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "burst_seq_range": [
+    890,
+    4072
+  ]
+}

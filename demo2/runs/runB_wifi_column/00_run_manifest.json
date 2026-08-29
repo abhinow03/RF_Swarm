@@ -1,0 +1,65 @@
+{
+  "run_id": "runB_wifi_column",
+  "scenario_id": "gate_k6_wifi",
+  "protocol": "wifi",
+  "formation_label": "column",
+  "k": 6,
+  "seed": 7,
+  "capture_start_unix": 1787906575.1048594,
+  "capture_end_unix": 1787906755.114754,
+  "duration_s": 180.0098946094513,
+  "scenario_yaml_path": "/home/pw26_akp_01/RF_Swarm/capstone_ws/src/capstone_scenarios/scenarios/gate_k6_wifi.yaml",
+  "scenario_yaml_sha256": "dab5577eb2369b986dc2130ddb4c8b589448b1835a67d8db5712479ec2e30f63",
+  "dependency_manifest_sha256": "75f09f9c9fd979d9f9437397f9adab86d08948fee22086c8fe96dc9f005be745",
+  "node_health": {
+    "capstone_sim": {
+      "passthrough_truth": false,
+      "publish_rate_hz": 50.0,
+      "messages_dropped": 0,
+      "status_text": "ok"
+    },
+    "capstone_base": {
+      "passthrough_truth": false,
+      "publish_rate_hz": 0.0,
+      "messages_dropped": 0,
+      "status_text": "K_hat=6 tracks=353 withheld(<15)=0"
+    },
+    "capstone_track": {
+      "passthrough_truth": false,
+      "publish_rate_hz": 10.0,
+      "messages_dropped": 0,
+      "status_text": "tracks=6 assoc_map=353 pending=361"
+    },
+    "capstone_formation": {
+      "passthrough_truth": false,
+      "publish_rate_hz": 2.0,
+      "messages_dropped": 0,
+      "status_text": "EKF formation=column conf=0.988"
+    },
+    "capstone_predict": {
+      "passthrough_truth": false,
+      "publish_rate_hz": 10.0,
+      "messages_dropped": 0,
+      "status_text": "cv_baseline predictions for 6 tracks, horizon=5.0s"
+    },
+    "capstone_bridge": {
+      "passthrough_truth": false,
+      "publish_rate_hz": 10.0,
+      "messages_dropped": 0,
+      "status_text": "ok"
+    },
+    "capstone_narrate": {
+      "passthrough_truth": false,
+      "publish_rate_hz": 0.0,
+      "messages_dropped": 0,
+      "status_text": "ok"
+    },
+    "capstone_rff": {
+      "passthrough_truth": false,
+      "publish_rate_hz": 12.0,
+      "messages_dropped": 0,
+      "status_text": "ok"
+    }
+  },
+  "note": "No git repo exists anywhere under RF_Swarm (verified 2026-08-28) \u2014 code provenance is the scenario YAML sha256 above + DEPENDENCY_MANIFEST.md (vendor commit, model checksums), not a git commit hash."
+}

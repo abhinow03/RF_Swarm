@@ -1,0 +1,72 @@
+{
+  "what_this_shows": "one burst -> multilateration. TDoA = range differences from arrival-time differences; closed-form init then refined by the joint EKF (which also estimates receiver clock bias).",
+  "burst_seq": 481,
+  "time_s": 40.1,
+  "blind_global_id": "d1",
+  "(scoring) true_emitter": 5,
+  "receiver_positions_ENU": [
+    [
+      90.0,
+      90.0,
+      0.0
+    ],
+    [
+      -90.0,
+      90.0,
+      35.0
+    ],
+    [
+      -90.0,
+      -90.0,
+      0.0
+    ],
+    [
+      90.0,
+      -90.0,
+      35.0
+    ],
+    [
+      0.0,
+      0.0,
+      70.0
+    ]
+  ],
+  "time_of_arrival_s (receiver clock, bias-corrupted)": [
+    40.100000463,
+    40.10000047,
+    40.10000047,
+    40.100000365,
+    40.100000077
+  ],
+  "toa_sigma_s": [
+    1.5126189656839587e-08,
+    1.6545755076453008e-08,
+    1.6177305483312928e-08,
+    1.2410127239948846e-08,
+    2.5541099041336572e-09
+  ],
+  "range_differences_m  c*(toa_j - toa_0)": [
+    0.0,
+    2.1,
+    2.1,
+    -29.38,
+    -115.72
+  ],
+  "closed_form_tdoa_init_ENU": [
+    12.84,
+    -11.07,
+    74.43
+  ],
+  "EKF_refined_estimate_ENU": [
+    20.95,
+    -9.31,
+    47.64
+  ],
+  "ground_truth_ENU": [
+    15.1,
+    -8.66,
+    50.0
+  ],
+  "init_error_m": 24.66,
+  "EKF_error_m": 6.34
+}

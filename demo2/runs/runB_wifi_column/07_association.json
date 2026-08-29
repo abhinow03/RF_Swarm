@@ -1,0 +1,1778 @@
+{
+  "k_estimated": 6,
+  "encoder_sha256": "f1d7745eaa726e6a252961015a1647bf407f4e7815c022f128a12d9f752a2ebb",
+  "n_associations": 353,
+  "associations": [
+    {
+      "burst_seq": 16,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 17,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 18,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 19,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 20,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 21,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 22,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 23,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 24,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 25,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 26,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 27,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 28,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 29,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 30,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 31,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 32,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 33,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 34,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 35,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 36,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 37,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 38,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 39,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 40,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 41,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 42,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 43,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 44,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 45,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 46,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 47,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 48,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 49,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 50,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 51,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 52,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 53,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 54,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 55,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 56,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 57,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 58,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 59,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 60,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 61,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 62,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 63,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 64,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 65,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 66,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 67,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 68,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 69,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 70,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 71,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 72,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 73,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 74,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 75,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 76,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 77,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 78,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 79,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 80,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 81,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 82,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 83,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 84,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 85,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 86,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 87,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 88,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 89,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 90,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 91,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 92,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 93,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 94,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 95,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 96,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 97,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 98,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 99,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 100,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 101,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 102,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 103,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 104,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 105,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 106,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 107,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 108,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 109,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 110,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 111,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 112,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 113,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 114,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 115,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 116,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 117,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 118,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 119,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 120,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 121,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 122,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 123,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 124,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 125,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 126,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 127,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 128,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 129,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 130,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 131,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 132,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 133,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 134,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 135,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 136,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 137,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 138,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 139,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 140,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 141,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 142,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 143,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 144,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 145,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 146,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 147,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 148,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 149,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 150,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 151,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 152,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 153,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 154,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 155,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 156,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 157,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 158,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 159,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 160,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 161,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 162,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 163,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 164,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 165,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 166,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 167,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 168,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 169,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 170,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 171,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 172,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 173,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 174,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 175,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 176,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 177,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 178,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 179,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 180,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 181,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 182,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 183,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 184,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 185,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 186,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 187,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 188,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 189,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 190,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 191,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 192,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 193,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 194,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 195,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 196,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 197,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 198,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 199,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 200,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 201,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 202,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 203,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 204,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 205,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 206,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 207,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 208,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 209,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 210,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 211,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 212,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 213,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 214,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 215,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 216,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 217,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 218,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 219,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 220,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 221,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 222,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 223,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 224,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 225,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 226,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 227,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 228,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 229,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 230,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 231,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 232,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 233,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 234,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 235,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 236,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 237,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 238,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 239,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 240,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 241,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 242,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 243,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 244,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 245,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 246,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 247,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 248,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 249,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 250,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 251,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 252,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 253,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 254,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 255,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 256,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 257,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 258,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 259,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 260,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 261,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 262,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 263,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 264,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 265,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 266,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 267,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 268,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 269,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 270,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 271,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 272,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 273,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 274,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 275,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 276,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 277,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 278,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 279,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 280,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 281,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 282,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 283,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 284,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 285,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 286,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 287,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 289,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 290,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 291,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 292,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 293,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 294,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 295,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 296,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 297,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 298,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 299,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 300,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 301,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 302,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 303,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 304,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 305,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 306,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 307,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 308,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 309,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 310,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 311,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 312,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 313,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 314,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 315,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 316,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 317,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 318,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 319,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 320,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 321,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 322,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 323,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 324,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 325,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 326,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 327,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 328,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 329,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 330,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 331,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 332,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 333,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 334,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 335,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 336,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 337,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 338,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 339,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 340,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 341,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 342,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 343,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 344,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 345,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 346,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 347,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 348,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 349,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 350,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 351,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 352,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 353,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 354,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 355,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 356,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 357,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 358,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 359,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 361,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 362,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 363,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 364,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    },
+    {
+      "burst_seq": 365,
+      "global_id": "d2",
+      "confidence": 0.918694019317627
+    },
+    {
+      "burst_seq": 366,
+      "global_id": "d3",
+      "confidence": 0.9485180377960205
+    },
+    {
+      "burst_seq": 367,
+      "global_id": "d4",
+      "confidence": 0.9826402068138123
+    },
+    {
+      "burst_seq": 368,
+      "global_id": "d5",
+      "confidence": 0.9743728637695312
+    },
+    {
+      "burst_seq": 369,
+      "global_id": "d6",
+      "confidence": 0.9794230461120605
+    },
+    {
+      "burst_seq": 370,
+      "global_id": "d1",
+      "confidence": 0.813023030757904
+    }
+  ],
+  "bijectivity_check": {
+    "note": "TRUTH-INFORMED verification only (like capstone_eval) \u2014 not used by the pipeline",
+    "global_id_to_n_distinct_truth_emitters": {},
+    "truth_emitter_to_n_distinct_global_ids": {},
+    "is_bijective": true
+  }
+}

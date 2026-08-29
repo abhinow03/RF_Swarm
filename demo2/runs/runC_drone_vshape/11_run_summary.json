@@ -1,0 +1,33 @@
+{
+  "run_id": "runC_drone_vshape",
+  "scenario_id": "gate_k6_drone",
+  "protocol": "drone_ocusync",
+  "formation_label_truth": "v_shape",
+  "k_true": 6,
+  "k_estimated": 6,
+  "k_estimate_correct": true,
+  "formation_class_latest": "shield",
+  "formation_class_majority": "shield",
+  "formation_majority_fraction": 0.7049891540130152,
+  "formation_confidence": 0.8415,
+  "formation_correct": false,
+  "n_tracks": 6,
+  "position_rmse": {
+    "note": "TRUTH-INFORMED verification only, not used by the pipeline",
+    "n": 6,
+    "rmse_m": 21.720738879319637,
+    "mean_m": 21.66322218116514,
+    "max_m": 24.934947648445654
+  },
+  "n_narration_events": 4,
+  "node_health_status": {
+    "capstone_base": "K_hat=6 tracks=2594 withheld(<15)=0",
+    "capstone_track": "tracks=6 assoc_map=2594 pending=158",
+    "capstone_formation": "EKF formation=shield conf=0.863",
+    "capstone_predict": "cv_baseline predictions for 6 tracks, horizon=5.0s",
+    "capstone_bridge": "ok",
+    "capstone_sim": "ok",
+    "capstone_narrate": "model load failed: only 13.6 GiB free GPU memory, need >= 15.0 GiB -- halting before loading anything (see V5A2 training session's OOM crash for why this project checks first rather than attempting and crashing)",
+    "capstone_rff": "ok"
+  }
+}
