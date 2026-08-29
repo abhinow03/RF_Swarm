@@ -20,7 +20,7 @@ capstone_ws/tools/mkcert
 capstone_ws/certs/*.pem
 capstone_ws/certs/mkcert-ca/
 
-# --- Claude Code project-local config (not part of the project) ---
+# --- local tooling config (not part of the project) ---
 .claude/
 
 # --- Editor / OS cruft ---
