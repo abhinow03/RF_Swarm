@@ -357,4 +357,5 @@ review:
 | [`capstone_ws/src/capstone_base/FINGERPRINT_METHOD.md`](capstone_ws/src/capstone_base/FINGERPRINT_METHOD.md) | Eigengap K-estimation + merge-tau method detail |
 | [`vendor/src/swarm_intent/stgt/README.md`](vendor/src/swarm_intent/stgt/README.md) | What was and wasn't vendored from the STGT upstream repo, and why |
 | [`demo2/docs/run_selection_notes.md`](demo2/docs/run_selection_notes.md) | Why Run A's formation was empirically re-chosen |
+| [`demo2/eval_results/README.md`](demo2/eval_results/README.md) | Saved evaluation numbers (EKF RMSE, truth-fed vs. real-fed formation confusion, CV-baseline path RMSE) + how error accumulates stage to stage |
 | [`capstone_ws/scripts/install_quest_ca.md`](capstone_ws/scripts/install_quest_ca.md) | Sideloading the local TLS CA onto a Quest headset |

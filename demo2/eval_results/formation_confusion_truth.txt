@@ -1,0 +1,11 @@
+/home/pw26_akp_01/RF_Swarm/vendor/src/swarm_intent/stgt/model.py:146: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(
+=== Phase-5 TRUTH-fed confusion (clean scenario trajectories) ===
+  true=v_shape       -> pred=v_shape       conf=0.977  [OK]
+  true=encirclement  -> pred=encirclement  conf=0.837  [OK]
+  true=column        -> pred=column        conf=0.988  [OK]
+  true=diamond       -> pred=diamond       conf=0.991  [OK]
+  true=dispersed     -> pred=dispersed     conf=0.995  [OK]
+
+  truth-fed accuracy: 5/5
+  (top-1 predictions define the reference; live gate compares against this)

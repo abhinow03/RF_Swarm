@@ -1,0 +1,10 @@
+
+===== CV-BASELINE PATH-PREDICTION RMSE (model_id=cv_baseline) =====
+gid->emitter map: {'d4': 3, 'd5': 2, 'd6': 1, 'd1': 0, 'd2': 5, 'd3': 4}   predictions scored: 40644
+  horizon ~0s: RMSE= 34.27m  mean= 33.35m  n=4194
+  horizon ~1s: RMSE= 34.72m  mean= 33.67m  n=4170
+  horizon ~2s: RMSE= 35.72m  mean= 34.34m  n=12330
+  horizon ~3s: RMSE= 36.81m  mean= 35.04m  n=4050
+  horizon ~4s: RMSE= 38.03m  mean= 35.78m  n=11970
+  horizon ~5s: RMSE= 39.34m  mean= 36.56m  n=3930
+  OVERALL: RMSE=36.64m  (this is the number an ML path model must beat)

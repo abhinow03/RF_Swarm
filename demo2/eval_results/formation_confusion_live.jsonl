@@ -1,0 +1,5 @@
+{"true": "v_shape", "pred_mode": "diamond", "n_pred": 90, "counts": {"diamond": 90}, "mean_conf": 0.978}
+{"true": "encirclement", "pred_mode": "diamond", "n_pred": 90, "counts": {"diamond": 90}, "mean_conf": 0.989}
+{"true": "column", "pred_mode": "column", "n_pred": 89, "counts": {"column": 89}, "mean_conf": 0.984}
+{"true": "diamond", "pred_mode": "diamond", "n_pred": 92, "counts": {"diamond": 92}, "mean_conf": 0.991}
+{"true": "dispersed", "pred_mode": "dispersed", "n_pred": 92, "counts": {"dispersed": 92}, "mean_conf": 0.995}

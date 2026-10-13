@@ -1,0 +1,14 @@
+=== Phase-4 EKF validation (gate_k6 replay, disciplined-array prior) ===
+ seed   pos_rms   pos_p90   clk_err  NEES(med)
+    7    15.08m    23.84m    51.76m        7.6
+   11    18.11m    27.41m    61.02m       28.2
+   23    14.50m    24.60m    39.43m        9.8
+   42    14.36m    21.50m    41.57m       14.7
+  101    14.58m    24.08m    45.08m        5.6
+    3    16.49m    26.14m    56.45m        9.8
+   99    26.72m    37.45m    68.79m       79.5
+   55    16.72m    24.82m    30.83m       10.0
+------------------------------------------------
+MEAN  pos_rms=17.07m (max 26.72)  p90=26.23m  clk_err=49.37m  NEES_med=9.9
+Interpretation: position bounded/stable ~17 m mean (8-27 m across CLOCK realizations — the draw's projection onto the near-null space dominates; GDOP+clock-prior limited). Clock prior-dominated (weakly observable, NOISE_MODEL §4a). NEES med ~10 => filter ~2-3x overconfident; inflate track covariance ~3x downstream (worst-draw seeds reach NEES ~80).
+GATE: PASS (bounded localization, no divergence)
