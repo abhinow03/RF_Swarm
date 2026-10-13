@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#050807">
+<link rel="icon" href="data:,">
+<title>RF Emitter Highlighter XR</title>
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+
+<!-- Plain global scripts, not ES modules: every file below shares one
+     global scope and executes in this exact order, identical to how the
+     single-file build's inline <script> blocks always worked. This keeps
+     GitHub Pages deploys simple (no build step, no CORS/module concerns)
+     and makes the split a pure reorganization, not a behavior change. -->
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/formation.js"></script>
+
+<script src="js/xr-launcher.js"></script>
+<script src="js/anchor-lock.js"></script>
+<script src="js/world-scale.js"></script>
+<script src="js/rf-emitter.js"></script>
+<script src="js/real-occluders.js"></script>
+<script src="js/swarm-player.js"></script>
+<script src="js/formation-banner.js"></script>
+<script src="js/scan-field.js"></script>
+<script src="js/gaze-picker.js"></script>
+<script src="js/gaze-hud.js"></script>
+<script src="js/tactical-grid.js"></script>
+<script src="js/control-hub.js"></script>
+<script src="js/emitter-source.js"></script>
+<script src="js/ros-feed.js"></script>
+<script src="js/feed-status.js"></script>
+</head>
+
+<body>
+<div id="overlay">
+  <h1>RF EMITTER HIGHLIGHTER</h1>
+  <p>Standalone Meta Quest Browser &mdash; not over Link.<br>
+     One control hub, gaze+hold, trigger, or any click.<br>
+     Two demos: Live Localisation (static classes) and Swarm Formation (formation classifier).</p>
+  <div id="demoBtns">
+    <button id="btn-mode">MODE: SWARM FORMATION</button>
+    <button id="btn-formation">FORMATION: V SHAPE</button>
+  </div>
+  <div class="btns">
+    <button id="btn-ar" disabled>ENTER MIXED REALITY</button>
+    <button id="btn-vr" disabled>ENTER VR</button>
+  </div>
+  <div id="diag">checking XR support&hellip;</div>
+</div>
+
+<script src="js/main.js"></script>
+
+<a-scene
+  vr-mode-ui="enabled: false"
+  webxr="referenceSpaceType: local-floor; optionalFeatures: local-floor, bounded-floor, hand-tracking, anchors"
+  renderer="antialias: true; foveationLevel: 1; colorManagement: true; alpha: true"
+  xr-launcher gaze-picker real-occluders swarm-player>
+
+  <a-entity light="type: ambient; color:#8899aa; intensity:0.75"></a-entity>
+  <!-- key light: gives flat-shaded facets distinct values so low-poly models
+       read as solid volumes (the trick behind bright low-poly MR demos) -->
+  <a-entity light="type: directional; color:#ffffff; intensity:1.5" position="3 6 2"></a-entity>
+  <a-entity light="type: directional; color:#88aaff; intensity:0.5" position="-4 -1 -3"></a-entity>
+
+  <a-plane id="ground" rotation="-90 0 0" width="300" height="300" color="#07110d" material="shader:flat"></a-plane>
+  <a-entity id="grid" tactical-grid></a-entity>
+
+  <a-entity id="world" anchor-lock world-scale emitter-source>
+    <a-entity scan-field></a-entity>
+  </a-entity>
+
+  <!-- dashboard lives in WORLD space, not on the camera: a head-locked
+       panel can never be gaze-targeted because it moves with the gaze -->
+  <a-entity id="hub" control-hub></a-entity>
+
+  <a-entity id="rig">
+    <a-camera id="head" position="0 1.7 0" look-controls="pointerLockEnabled:false" wasd-controls="enabled:false">
+      <a-ring id="reticle" position="0 -0.02 -1.2" radius-inner="0.005" radius-outer="0.009"
+        color="#2dffa0" material="shader:flat; fog:false"></a-ring>
+
+      <!-- classifier readout + live/sim tag: docked corners just above centre,
+           within normal forward gaze (was y=0.19, needed a full upward glance
+           on Quest; y=0.06 sits inside the comfortable FOV band). -->
+      <a-entity formation-banner position="0.28 0.06 -0.78" rotation="-4 -10 0"></a-entity>
+      <a-entity id="gaze-hud" gaze-hud position="0 -0.26 -0.70" rotation="12 0 0"></a-entity>
+      <a-entity feed-status position="-0.28 0.06 -0.78" rotation="-4 10 0"></a-entity>
+    </a-camera>
+    <a-entity laser-controls="hand:left"></a-entity>
+    <a-entity laser-controls="hand:right"></a-entity>
+  </a-entity>
+</a-scene>
+</body>
+</html>

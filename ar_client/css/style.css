@@ -1,0 +1,18 @@
+/* style.css — flat-page overlay styling. */
+  html,body{margin:0;width:100%;height:100%;background:#050807;font-family:ui-monospace,Menlo,Consolas,monospace;overflow:hidden}
+  #overlay{position:fixed;left:16px;top:16px;z-index:6;color:#2dffa0;background:rgba(4,16,12,.9);
+    border:1px solid rgba(45,255,160,.4);padding:14px 16px;border-radius:9px;max-width:360px}
+  #overlay h1{margin:0 0 4px;font-size:14px;letter-spacing:1.5px}
+  #overlay p{margin:0 0 12px;font-size:11px;color:#7fae9c;line-height:1.65}
+  .btns{display:flex;gap:8px;margin-bottom:10px}
+  .btns button{flex:1;padding:11px 8px;font-family:inherit;font-size:12px;letter-spacing:.5px;
+    border-radius:7px;border:1px solid #2dffa0;background:rgba(45,255,160,.08);color:#2dffa0;cursor:pointer}
+  .btns button:disabled{opacity:.35;border-color:#3a5b50;color:#5c7d70;cursor:not-allowed}
+  .btns button.on{box-shadow:0 0 14px rgba(45,255,160,.35)}
+  #demoBtns{display:flex;gap:8px;margin-bottom:10px;border-top:1px solid rgba(45,255,160,.25);padding-top:10px}
+  #demoBtns button{flex:1;padding:9px 6px;font-family:inherit;font-size:11px;letter-spacing:.3px;
+    border-radius:7px;border:1px solid #39e0ff;background:rgba(57,224,255,.08);color:#39e0ff;cursor:pointer}
+  #demoBtns button:active{background:rgba(57,224,255,.25)}
+  #diag{font-size:11px;line-height:1.6;border-top:1px solid rgba(45,255,160,.25);padding-top:9px}
+  #diag.ok{color:#2dffa0} #diag.warn{color:#ffb454} #diag.bad{color:#ff5252}
+  .in-xr #overlay{display:none}

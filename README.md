@@ -124,11 +124,13 @@ RF_Swarm/
 ├── data/                        real BLE embedding pool (Phase 3 provenance)
 ├── demo/                        earlier scripted-demo capture (superseded by demo2)
 ├── demo2/                       review-ready run instrumentation — see below
+├── ar_client/                   the Meta Quest AR/WebXR client (A-Frame), see below
 ├── capstone_msgs_spec.md        the message contract, field by field
 ├── DEPENDENCY_MANIFEST.md       provenance ledger for every vendored/copied artifact
 ├── README_INTEGRATED_SYSTEM.md  earlier system-integration notes (launch commands, directory tree)
 ├── reconciliation_answers.md    the /scene_update wire-format decision record
-└── requirements.txt             pip freeze of the CPU venv (see "environments" below)
+├── requirements.txt             pip freeze of the CPU venv (see "environments" below)
+└── requirements-gpu.txt         pip freeze of the CUDA venv (see "environments" below)
 ```
 
 ## The two environments (and why)
@@ -151,14 +153,19 @@ accidental:
    (`vendor/`, `models/llm_adapter/`) — only the heavyweight CUDA *interpreter
    and its installed packages* (torch+CUDA, transformers, bitsandbytes) live
    outside the repo, because duplicating a multi-GB CUDA stack per-repo isn't
-   practical. If you're setting this up fresh on a machine with a GPU, you
-   need a second venv with `torch` (CUDA build), `transformers`,
-   `bitsandbytes`, `peft` installed — nothing else is special about it.
+   practical. If you're setting this up fresh on a machine with a GPU, build
+   a second venv from `requirements-gpu.txt` (it has the exact `pip install`
+   sequence, since the CUDA build of `torch` needs its own index URL).
 
    One additional dependency **not vendored**: the Qwen2.5-7B base model
-   itself (~15GB, lives in the HF cache on the original machine). See
-   [`DEPENDENCY_MANIFEST.md`](DEPENDENCY_MANIFEST.md) §5 for exact commands to
-   fully localize it if you need to.
+   itself (~15GB). It's a stock, revision-pinned HF model, not anything this
+   project produced, so it's pulled from HuggingFace rather than committed:
+   ```bash
+   huggingface-cli download Qwen/Qwen2.5-7B-Instruct \
+     --revision a09a35458c702b33eeacc393d103063234e8bc28
+   ```
+   See [`DEPENDENCY_MANIFEST.md`](DEPENDENCY_MANIFEST.md) §5 if you want it
+   fully localized inside `models/` instead of the HF cache.
 
 Two more environment variables `activate.sh` needs to know about for the
 non-BLE scenarios (Run B/C in `demo2/`, see below):
@@ -271,17 +278,29 @@ and the diamond/v_shape formation snapshots don't read as cleanly by eye as
 column does, because both are close in scale to real EKF position noise. Real
 data, real limitations — not bugs.
 
-## The AR headset client (separate repo)
+## The AR headset client
 
-The Meta Quest AR visualization is a **separate repository**, not part of
-this one: it only ever talks to this pipeline over rosbridge/websocket
-(`/scene_update`, `/formation`, `/narration`) — it has no direct code
-dependency on anything here, so it's versioned separately.
+The Meta Quest AR visualization lives in `ar_client/` (A-Frame/WebXR). It
+has no code dependency on anything else in this repo — it only ever talks to
+the pipeline over rosbridge/websocket (`/scene_update`, `/formation`,
+`/narration`) — so it's folded in as a plain copy, not a submodule, with its
+own git history dropped.
 
-If you're a teammate looking for "where's the headset code," it isn't in
-`RF_Swarm` — ask whoever has the AR-visualization repo link, or check the
-GitHub org for it. `capstone_ws/client/` in *this* repo is just the small
-JS bridge/parsing helpers, not the AR scene itself.
+To view it on a headset, it needs to be served over `https`/`wss` (WebXR
+requirement) and pointed at this machine's rosbridge instance via a query
+param:
+
+```
+<your-served-url>/ar_client/?ros=wss://<host-running-rosbridge>:9443
+```
+
+The original deployment served it via GitHub Pages; any static host (or even
+`python3 -m http.server` behind a TLS-terminating proxy) works the same way.
+See `capstone_ws/scripts/install_quest_ca.md` for trusting this project's
+local TLS CA on the headset itself.
+
+`capstone_ws/client/` is a separate, smaller thing: drop-in JS bridge/parsing
+helpers (`rf_bridge.js`) used for headless testing, not the AR scene itself.
 
 ## Project history
 
